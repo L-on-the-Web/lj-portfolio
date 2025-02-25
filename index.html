@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/logo-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo-32x32.png">
+      <link rel="shortcut icon" href="assets/icons/logo-48x48.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/logo-180x180">
+
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>LaBriana Jackson &verbar; Home</title>
+   </head>
+   <body>
+      <header>
+         <nav class="blurred">
+            <div class="logo">
+               <a href="index.html">L Jackson</a>
+            </div>
+            <ul class="navigation">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="#project-snip">Projects</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://labrianaportfolio.wordpress.com/blog/">Blog</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+            </ul>
+            <div id="hamburger" class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </nav>
+      </header>
+      <div class="main-container">
+         <section class="intro">
+            <div class="intro-hero">
+               <h1>Hi, I'm LaBriana Jackson</h1>
+               <p>I'm a freelance web designer / developer.</p>
+               <p>Let's work together to create beutiful websites!</p>
+               <div class="cta-btn">
+                  <button class="resume-btn">Check out my resume</button>
+                  <a href="#contact-form"><button class="contact-btn">Contact me today</button></a>
+               </div>
+            </div>
+            <div class="freelancer-img">
+               <img src="assets/images/3189802.jpg" width="2000" height="2000" alt="A vector of a freelancer working on a computer. Designed by slidesgo / Freepik">
+            </div>
+         </section>
+         <section class="about-snip">
+            <h2>Here's a bit about me</h2>
+            <div class="snip-detail">
+               <p>I'm a naturally curious person who will ask questions to deepen my understanding.</p>
+               <p>I am currently searching for work as a web designer. I have skills in CSS3, HTML, and JavaScript.</p>
+               <a href="about.html"><button>Learn more about what I do</button></a>
+            </div>
+         </section>
+         <section class="project-snip" id="project-snip">
+            <h2>A glimpse of my projects</h2>
+            <div class="project-gallery">
+               <a class="pg-link" href="color_palette.html">
+                  <div class="project-card">
+                     <div class="project-img">
+                        <img src="assets/images/color-palette.png" width="1366" height="768" alt="A 6-page website I designed and coded detailing common color combinations">
+                     </div>
+                     <div class="project-description">
+                        <h3>Color Palette</h3>
+                        <p>I designed this website as a personal project because I was looking at color palettes and needed to make a website to help me learn color combinations.</p>
+                     </div>
+                  </div>
+               </a>
+               <a class="pg-link" href="local-artisan-market.html">
+                  <div class="project-card">
+                     <div class="project-img">
+                        <img src="assets/images/local-artisans.png" width="1366" height="768" alt="A webpage advertising a local event for artisans">
+                     </div>
+                     <div class="project-description">
+                        <h3>The Local Artisan's Market</h3>
+                        <p>I gave myself a project brief to create a website advertising a local event called The Local Artisan's Market.</p>
+                     </div>
+                  </div>
+               </a>
+               <a class="pg-link" href="basic-calculator.html">
+                  <div class="project-card">
+                     <div class="project-img">
+                        <img src="assets/images/basic-mathmatic-calculator.png" width="1366" height="768" alt="A online calculator using JavaScript">
+                     </div>
+                     <div class="project-description">
+                        <h3>Basic Mathmatic Calculator</h3>
+                        <p>I programmed and designed this functional online calculator with JavaScript.</p>
+                     </div>
+                  </div>
+               </a>
+               <a class="pg-link" href="amazon-clone.html">
+                  <div class="project-card">
+                     <div class="project-img">
+                        <img src="assets/images/amazon-clone.png" width="1366" height="768" alt="A clone of the Amazon website. Specifically the Indian one.">
+                     </div>
+                     <div class="project-description">
+                        <h3>Amazon Clone</h3>
+                        <p>I recreated the Amazon website on my own using a tutorial.</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </section>
+         <section class="contact-form" id="contact-form">
+            <h2>Questions? Ask me!</h2>
+            <form action="#" method="post"><!--Setup form w/ GitHub actions and external app (Google Forms) later-->
+               <legend>* Required</legend>
+               <fieldset class="name">
+                  <label for="name-input">
+                    First and Last Name *
+                    <input type="text" name="name" id="name-input" autocomplete="name" placeholder="Full Name" required>
+                  </label>
+               </fieldset>
+               <fieldset class="email">
+                  <label for="email-input">
+                    Email *
+                    <input type="email" name="email" id="email-input" autocomplete="email" placeholder="john.doe@example.com" required>
+                  </label>
+               </fieldset>
+               <fieldset class="phone">
+                  <label for="phone-input">
+                    Phone
+                    <input type="tel" name="phone" id="phone-input" pattern"([0-9]{3} [0-9]{3}-[0-9]{4})" autocomplete="tel-national" placeholder="(123) 456-7890">
+                  </label>
+               </fieldset>
+               <fieldset class="comment">
+                  <label for="comment-input">
+                    Comment *
+                    <textarea type="text" name="comment" id="comment-input" rows="10" cols="60" placeholder="Say hello, request some code, etc." required></textarea>
+                  </label>
+               </fieldset>
+               <fieldset class="submit">
+                  <label for="submit-btn">
+                    <input type="submit" value="submit" id="submit-btn">
+                  </label>
+               </fieldset>
+            </form>
+         </section>
+      </div>
+      <footer>
+         <div class="foot">
+            <div class="foot-flex">
+               <p>Designed and Developed by L-on-the-Web</p>
+               <p class="intro-credit">Freelancer Concept Image <a href="http://www.freepik.com">designed by slidesgo / Freepik</a></p>
+            </div>
+            <p>&copy; 2025 LaBriana Jackson</p>
+            <div class="social-flex">
+               <div class="foot-socials">
+                  <a href="https://facebook.com"><img class="social-icon" src="assets/icons/facebook_iconfinder.png" width="48" height="48" alt="Facebook"></a>
+                  <a href="https://linkedin.com/labriana-jackson"><img class="social-icon" src="assets/icons/linkedin_iconfinder.png" width="48" height="48" alt="LinkedIn"></a>
+                  <a href="https://github.com/L-on-the-Web"><img class="social-icon" src="assets/icons/github_iconfinder.png" width="48" height="48" alt="GitHub"></a>
+                  <a href="https://codepen.io/L-Jackson-the-encoder"><img class="social-icon" src="assets/icons/codepen_iconfinder.png" width="48" height="48" alt="CodePen"></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
