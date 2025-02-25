@@ -1,0 +1,134 @@
+/*-------UNIVERSAL CLASS STYLES-------*/
+.article-holder {
+   padding-bottom: 3.75rem;
+   display: block;
+   width: 100%;
+}
+
+.prompt {
+   margin-left: 5%;
+}
+
+.bp-slider {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+}
+
+.slider-btn {
+   width: 200px;
+   color: var(--black);
+   background-color: transparent;
+}
+
+.slider-btn:hover, .slider-btn:focus {
+   background-color: var(--white);
+}
+
+.list {
+   margin-left: 2.75rem;
+}
+
+.list li {
+   margin: 0.75rem 0;
+}
+
+/*-------IMAGES-------*/
+.about-img {
+   flex-basis: 1500px;
+}
+
+.about-img img, .big-project img, .big-project video {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+   border-radius: var(--border-radius);
+}
+
+.big-project-gallery img:first-child {
+   grid-column: 1 / 4;
+}
+
+.bp-concept-img {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 1300px;
+   gap: 15px;
+}
+
+.bp-concept-img img, .bp-concept-img video {
+   height: 100%;
+   cursor: zoom-in;
+}
+
+#artisan-concept {
+   flex-direction: column;
+}
+/*-------ABOUT PAGE-------*/
+.about-container {
+   margin-bottom: 2rem;
+   display: flex;
+   flex-direction: row-reverse;
+   gap: var(--main-img-gap);
+}
+
+.about-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: var(--paragraph-gap);
+}
+
+.skill-head {
+   font-weight: bold;
+}
+
+
+/*-------PROJECT PAGE-------*/
+.project-container {
+   margin-bottom: 5rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.big-project {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+}
+
+.big-project-gallery {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0.75rem;
+}
+
+#project-amazon {
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.big-project-case-study {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+}
+
+.bp-description {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: var(--paragraph-gap);
+}
+
+.italic {
+   font-style: italic;
+}
+
+.bp-description a {
+   text-decoration: underline;
+}
