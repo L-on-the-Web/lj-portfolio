@@ -19,7 +19,7 @@
          Swal.fire("Error", "Something went wrong. Please try again!", "error");
       });
       submitBtn.disabled = false;
-      submtiBtn.innerHTML = "Submit";
+      submitBtn.innerHTML = "Submit";
    });
    
    const hamburger = document.querySelector("#hamburger");
