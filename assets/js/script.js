@@ -1,18 +1,18 @@
-//FORM FUNCTIONALITY
 (function() {
+   // Form functionality
    const scriptURL = "https://script.google.com/macros/s/AKfycbwJlZ89AxFLXrWg4cee0-Q92qJ7th5q-V3W1qs0BUpjkSJtow6nlt8u8H78zTS_RWGaaA/exec";
    const form = document.forms["submit-to-google-sheet"];
    form.addEventListener("submit", (e) => {
       e.preventDefault();
       var formData = new FormData(form);
-   })
-
+   // Send form submissions to Google Sheet
    fetch(scriptURL, { method: "POST", body: formData })
-   .then((response) => {
-      swal("Done", "Submitted Successfully.", "success");
-   })
-   .catch((error) => {
-      swal("Error", "Something went wrong. Please try again!", "error");
+      .then((response) => {
+         swal("Done", "Submitted Successfully.", "success");
+      })
+      .catch((error) => {
+         swal("Error", "Something went wrong. Please try again!", "error");
+      });
    });
    //const form = document.querySelector("form");
    //const inputs = document.querySelectorAll("input");
@@ -22,10 +22,9 @@
    const navMenu = document.querySelector(".navigation");
    const navLink = document.querySelectorAll(".nav-link");
    const navBar = document.querySelector("nav");
-   
    const body = document.querySelector("body");
    
-   //HAMBURGER MENU
+   // Open hamburger menu on click
    hamburger.addEventListener("click", openMenu);
 
    function openMenu() {
