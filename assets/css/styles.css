@@ -330,12 +330,12 @@ fieldset {
    grid-column: 1 / 4;
 }
 
-label:before {
+label#text:before {
    content: "* ";
    color: red;
 }
 
-#phone-input:before {
+label[for="phone"]#text:before {
    content: "";
 }
 
