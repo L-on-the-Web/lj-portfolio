@@ -8,10 +8,10 @@
    // Send form submissions to Google Sheet
    fetch(scriptURL, { method: "POST", body: formData })
       .then((response) => {
-         swal("Done", "Submitted Successfully.", "success");
+         Swal.fire("Done", "Submitted Successfully.", "success");
       })
       .catch((error) => {
-         swal("Error", "Something went wrong. Please try again!", "error");
+         Swal.fire("Error", "Something went wrong. Please try again!", "error");
       });
    });
    //const form = document.querySelector("form");
