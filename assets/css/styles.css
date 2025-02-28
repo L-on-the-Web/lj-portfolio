@@ -321,6 +321,10 @@ nav {
    color: red;
 }
 
+.red {
+   color: red;
+}
+
 fieldset {
    padding: 1rem;
    border: none;
