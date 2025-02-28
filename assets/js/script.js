@@ -1,8 +1,22 @@
 //FORM FUNCTIONALITY
 (function() {
-   const form = document.querySelector("form");
-   const inputs = document.querySelectorAll("input");
-   const textarea = document.querySelector("textarea");
+   const scriptURL = "https://script.google.com/macros/s/AKfycbwJlZ89AxFLXrWg4cee0-Q92qJ7th5q-V3W1qs0BUpjkSJtow6nlt8u8H78zTS_RWGaaA/exec";
+   const form = document.forms["submit-to-google-sheet"];
+   form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      var formData = new FormData(form);
+   })
+
+   fetch(scriptURL, { method: "POST", body: formData })
+   .then((response) => {
+      swal("Done", "Submitted Successfully.", "success");
+   })
+   .catch((error) => {
+      swal("Error", "Something went wrong. Please try again!", "error");
+   });
+   //const form = document.querySelector("form");
+   //const inputs = document.querySelectorAll("input");
+   //const textarea = document.querySelector("textarea");
    
    const hamburger = document.querySelector("#hamburger");
    const navMenu = document.querySelector(".navigation");
