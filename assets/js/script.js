@@ -2,21 +2,25 @@
    // Form functionality
    const scriptURL = "https://script.google.com/macros/s/AKfycbwJlZ89AxFLXrWg4cee0-Q92qJ7th5q-V3W1qs0BUpjkSJtow6nlt8u8H78zTS_RWGaaA/exec";
    const form = document.forms["submit-to-google-sheet"];
+   const submitBtn = document.querySelector("#submit-btn");
    form.addEventListener("submit", (e) => {
       e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = "Loading...";
       var formData = new FormData(form);
+      
    // Send form submissions to Google Sheet
    fetch(scriptURL, { method: "POST", body: formData })
       .then((response) => {
          Swal.fire("Done", "Submitted Successfully.", "success");
+         form.reset();
       })
       .catch((error) => {
          Swal.fire("Error", "Something went wrong. Please try again!", "error");
       });
+      submitBtn.disabled = false;
+      submtiBtn.innerHTML = "Submit";
    });
-   //const form = document.querySelector("form");
-   //const inputs = document.querySelectorAll("input");
-   //const textarea = document.querySelector("textarea");
    
    const hamburger = document.querySelector("#hamburger");
    const navMenu = document.querySelector(".navigation");
