@@ -34,8 +34,8 @@
    function openMenu() {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
-      body.classList.toggle("blur");
-      navBar.classList.toggle("blurred");
+      navBar.classList.add("blurred");
+      body.classList.add("blur");
    }
 
    // Close hamburger on navLink click
@@ -44,6 +44,7 @@
    function closeMenu() {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
-      navBar.style.setProperty("backdrop-filter", "blur(5px)");
+      navBar.classList.remove("blurred");
+      body.classList.remove("blur");
    }
 })();
