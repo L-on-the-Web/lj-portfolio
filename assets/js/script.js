@@ -1,6 +1,6 @@
 (function() {
    // Form functionality
-   const scriptURL = "https://script.google.com/macros/s/AKfycbwJlZ89AxFLXrWg4cee0-Q92qJ7th5q-V3W1qs0BUpjkSJtow6nlt8u8H78zTS_RWGaaA/exec";
+   const scriptURL = "https://api.web3forms.com/submit";
    const form = document.forms["submit-to-google-sheet"];
    const submitBtn = document.querySelector("#submit-btn");
    form.addEventListener("submit", (e) => {
