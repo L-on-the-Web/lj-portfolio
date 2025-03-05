@@ -6,7 +6,7 @@
    form.addEventListener("submit", (e) => {
       e.preventDefault();
       submitBtn.disabled = true;
-      submitBtn.innerHTML = "Loading...";
+      submitBtn.value = "Loading...";
       var formData = new FormData(form);
       
    // Send form submissions to Web3Forms
@@ -19,7 +19,7 @@
          Swal.fire("Error", "Something went wrong. Please try again!", "error");
       });
       submitBtn.disabled = false;
-      submitBtn.innerHTML = "Submit";
+      submitBtn.value = "Submit";
    });
    
    const hamburger = document.querySelector("#hamburger");
