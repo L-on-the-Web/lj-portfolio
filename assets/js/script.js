@@ -1,7 +1,7 @@
 (function() {
    // Form functionality
    const scriptURL = "https://api.web3forms.com/submit";
-   const form = document.forms["contact"];
+   const form = document.querySelector("form");
    const submitBtn = document.querySelector("#submit-btn");
    form.addEventListener("submit", (e) => {
       e.preventDefault();
