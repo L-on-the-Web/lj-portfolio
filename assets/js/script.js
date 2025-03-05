@@ -1,7 +1,7 @@
 (function() {
    // Form functionality
    const scriptURL = "https://api.web3forms.com/submit";
-   const form = document.forms["submit-to-google-sheet"];
+   const form = document.forms["contact"];
    const submitBtn = document.querySelector("#submit-btn");
    form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -9,7 +9,7 @@
       submitBtn.innerHTML = "Loading...";
       var formData = new FormData(form);
       
-   // Send form submissions to Google Sheet
+   // Send form submissions to Web3Forms
    fetch(scriptURL, { method: "POST", body: formData })
       .then((response) => {
          Swal.fire("Done", "Submitted Successfully.", "success");
