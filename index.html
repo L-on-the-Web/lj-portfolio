@@ -12,12 +12,11 @@
 
       <link rel="stylesheet" href="assets/css/styles.css">
       <link rel="stylesheet" href="assets/css/mobile.css">
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js" integrity="sha256-lCHT/LfuZjRp+PdpWns/vKrnSn367D/g1E6Ju18wiH0=" crossorigin="anonymous"></script>
       <title>LaBriana Jackson &verbar; Home</title>
    </head>
    <body>
       <header>
-         <nav class="blurred">
+         <nav class="blur">
             <div class="logo">
                <a href="index.html">L Jackson</a>
             </div>
@@ -39,8 +38,8 @@
          <section class="intro">
             <div class="intro-hero">
                <h1>Hi, I'm LaBriana Jackson</h1>
-               <p>I'm a freelance web designer/developer.</p>
-               <p>Let's work together to create beautiful websites!</p>
+               <p>I'm a freelance web designer / developer.</p>
+               <p>Let's work together to create beutiful websites!</p>
                <div class="cta-btn">
                   <button class="resume-btn">Check out my resume</button>
                   <a href="#contact-form"><button class="contact-btn">Contact me today</button></a>
@@ -109,38 +108,35 @@
          </section>
          <section class="contact-form" id="contact-form">
             <h2>Questions? Ask me!</h2>
-            <form name="contact" method="POST">
-               <input type="hidden" name="access_key" value="a969655a-0406-4ee9-9338-0c2d4d7d5e8d">
-               <legend>* indicates a required field</legend>
+            <form action="#" method="post"><!--Setup form w/ GitHub actions and external app (Google Forms) later-->
+               <legend>* Required</legend>
                <fieldset class="name">
                   <label for="name-input">
-                    <span class="label"><span class="red">*</span> Name</span>
-                    <input type="text" name="Name" id="name-input" autocomplete="name" placeholder="Client Name" required>
+                    First and Last Name *
+                    <input type="text" name="name" id="name-input" autocomplete="name" placeholder="Full Name" required>
                   </label>
                </fieldset>
                <fieldset class="email">
                   <label for="email-input">
-                    <span class="label"><span class="red">*</span> Email</span>
-                    <input type="email" name="Email" id="email-input" autocomplete="email" placeholder="john.doe@example.com" required>
+                    Email *
+                    <input type="email" name="email" id="email-input" autocomplete="email" placeholder="john.doe@example.com" required>
                   </label>
                </fieldset>
                <fieldset class="phone">
                   <label for="phone-input">
                     Phone
-                    <input type="tel" name="Phone" id="phone-input" pattern"([0-9]{3}) [0-9]{3}-[0-9]{4}" autocomplete="tel-national" placeholder="(123) 456-7890">
+                    <input type="tel" name="phone" id="phone-input" pattern"([0-9]{3} [0-9]{3}-[0-9]{4})" autocomplete="tel-national" placeholder="(123) 456-7890">
                   </label>
                </fieldset>
                <fieldset class="comment">
                   <label for="comment-input">
-                    <span class="label"><span class="red">*</span> Message</span>
-                    <textarea type="text" name="Message" id="comment-input" rows="10" cols="60" placeholder="Say hello, request some code, etc." required></textarea>
+                    Comment *
+                    <textarea type="text" name="comment" id="comment-input" rows="10" cols="60" placeholder="Say hello, request some code, etc." required></textarea>
                   </label>
-                  <!-- Honeypot Spam Protection -->
-                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                </fieldset>
                <fieldset class="submit">
                   <label for="submit-btn">
-                    <input type="submit" name="submit" id="submit-btn">
+                    <input type="submit" value="submit" id="submit-btn">
                   </label>
                </fieldset>
             </form>
@@ -152,7 +148,7 @@
                <p>Designed and Developed by L-on-the-Web</p>
                <p class="intro-credit">Freelancer Concept Image <a href="http://www.freepik.com">designed by slidesgo / Freepik</a></p>
             </div>
-            <p>&copy; 2025 L. Jackson</p>
+            <p>&copy; 2025 LaBriana Jackson</p>
             <div class="social-flex">
                <div class="foot-socials">
                   <a href="https://facebook.com"><img class="social-icon" src="assets/icons/facebook_iconfinder.png" width="48" height="48" alt="Facebook"></a>
@@ -164,5 +160,6 @@
          </div>
       </footer>
       <script src="assets/js/script.js"></script>
+      <script src="assets/js/form.js"></script>
    </body>
 </html>
