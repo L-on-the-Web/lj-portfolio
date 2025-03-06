@@ -20,6 +20,7 @@
 
    // Close hamburger menu on navLink click
    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+   hamburger.addEventListener("click", closeMenu);
    
    function closeMenu() {
       hamburger.classList.remove("active");
