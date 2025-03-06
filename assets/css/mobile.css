@@ -1,13 +1,5 @@
 /*-------MOBILE SCREEN--------*/
 @media screen and (max-width: 768px) {
-   body.blur {
-      backdrop-filter: blur(5px);
-   }
-
-  /* body.blur > *:not(header) {
-      filter: blur(5px);
-   } */
-
    nav {
       padding: var(--mobile-nav-padding);
    }

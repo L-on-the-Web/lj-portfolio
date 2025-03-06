@@ -99,8 +99,12 @@ p {
    line-height: var(--paragraph-line-height);
 }
 
-.blurred {
+.blur {
    backdrop-filter: blur(5px);
+}
+
+.filter {
+   filter: blur(5px);
 }
 
 /*------- NAVIGATION -------*/
@@ -284,7 +288,7 @@ nav {
 
 .project-card {
    padding: 0.75rem;
-   height: 400px;
+   height: 370px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -318,10 +322,6 @@ nav {
 .contact-form legend {
    grid-column: 1 / 4;
    font-style: italic;
-   color: red;
-}
-
-.red {
    color: red;
 }
 
