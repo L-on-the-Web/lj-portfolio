@@ -4,7 +4,6 @@
    const navMenu = document.querySelector(".navigation");
    const navLink = document.querySelectorAll(".nav-link");
    const navBar = document.querySelector("nav");
-   const body = document.querySelector("body");
    const mainDiv = document.querySelector(".main-container");
    const footer = document.querySelector("footer");
 
