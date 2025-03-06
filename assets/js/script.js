@@ -11,11 +11,11 @@
    hamburger.addEventListener("click", openMenu);
    
    function openMenu() {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-      mainDiv.classList.toggle("filter");
-      footer.classList.toggle("filter");
-      navBar.classList.toggle("blur");
+      hamburger.classList.add("active");
+      navMenu.classList.add("active");
+      navBar.classList.remove("blur");
+      mainDiv.classList.add("filter");
+      footer.classList.add("filter");
    }
 
    // Close hamburger menu on navLink click
@@ -24,6 +24,8 @@
    function closeMenu() {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
-      //navBar.style.setProperty("backdrop-filter", "blur(5px)");
+      navBar.classList.add("blur");
+      mainDiv.classList.remove("filter");
+      footer.classList.remove("filter");
    }
 })();
