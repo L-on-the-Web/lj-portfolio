@@ -34,8 +34,8 @@
    function openMenu() {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
-      navBar.classList.add("blurred");
-      body.classList.add("blur");
+      navBar.classList.toggle("blurred");
+      body.classList.toggle("blur");
    }
 
    // Close hamburger on navLink click
