@@ -49,6 +49,10 @@
       transform: translateY(-10px) rotate(-45deg);
    }
 
+   body.dark .navigation {
+      background-color: rgba(78, 78, 78, 0.8);
+   }
+
    .navigation {
       padding: 3rem 0;
       background-color: rgba(230, 230, 230, 0.8);

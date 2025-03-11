@@ -1,0 +1,80 @@
+/*-------BODY-------*/
+body.dark {
+   background-image: url(../images/vgb3-dark.jpg);
+   color: var(--light-grey);
+}
+
+/*-------NAVIGATION-------*/
+body.dark nav {
+   background-color: rgba(78, 78, 78, 0.8);
+}
+
+body.dark .logo a, body.dark .logo a:visited {
+   color: var(--light-grey);
+}
+
+body.dark .bar {
+   background-color: var(--light-grey);
+}
+
+body.dark .nav-link, body.dark .nav-link:visited {
+   color: var(--light-grey);
+}
+
+/*-------SECTION 1 / INTRO-------*/
+body.dark .resume-btn {
+   color: var(--light-grey);
+}
+
+body.dark .resume-btn:hover, body.dark .resume-btn:focus {
+   background-color: var(--off-black);
+}
+
+/*-------SECTION 3 / PROJECTS-------*/
+body.dark .pg-link {
+   color: var(--light-grey);
+   background-color: var(--dark-transparent);
+}
+
+body.dark .pg-link:hover, body.dark .pg-link:focus {
+   background-color: var(--off-black);
+}
+
+body.dark .pg-link:visited {
+   color: var(--light-grey);
+}
+
+body.dark .slider-btn {
+   color: var(--light-grey);
+}
+
+body.dark .slider-btn:hover, body.dark .slider-btn:focus {
+   background-color: var(--off-black);
+}
+
+/*-------SECTION 4 / CONTACT FORM-------*/
+body.dark .contact-form form {
+   background-color: var(--dark-transparent);
+}
+
+body.dark .contact-form form:focus-within {
+   background-color: var(--off-black);
+}
+
+body.dark .contact-label {
+   color: var(--light-grey);
+}
+
+/*-------FOOTER--------*/
+body.dark .foot {
+   background-color: #414141;
+}
+
+body.dark .social-icon {
+   background-color: #B5B5B5;
+   border-radius: 50%;
+}
+
+body.dark .foot p {
+   color: var(--light-grey);
+}

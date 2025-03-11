@@ -18,12 +18,17 @@
    --project-border: 2px solid;
    --main-img-gap: 50px;
    --paragraph-gap: 20px;
-   --transparent-white: rgb(255 255 255 / 55%);
+   --transparent-white: rgb(255 255 255 / 50%);
+   --dark-transparent: rgb(255 255 255 / 18%);
+   --dark-red: #E74751;
    --light-red: #FF868F;
    --red: #FF4F5A;
    --dark-grey: #E6E6E6;
+   --darker-grey: #5D5D5D;
+   --darkest-grey: #4E4E4E;
    --light-grey: #EFEFEF;
    --white: #FFF;
+   --off-black: #252525;
    --black: #000;
    --transition-time: 0.35s ease-out;
 }
@@ -34,10 +39,12 @@ html {
    scroll-behavior: smooth;
 }
 
-header, footer, nav, div, img, h1, h2, ul, li, p {
+* {
    margin: 0;
    padding: 0;
    border: 0;
+   box-sizing: border-box;
+   transition: var(--transition-time);
 }
 
 body {
@@ -85,8 +92,8 @@ button {
 }
 
 button:hover, button:focus {
-   background-color: var(--light-red);
-   border-color: #EB7B83;
+   background-color: var(--dark-red);
+   border-color: #DF404B;
 }
 
 a, a:visited {
@@ -99,12 +106,17 @@ p {
    line-height: var(--paragraph-line-height);
 }
 
+/*-------UNIVERSAL CLASSES-------*/
 .blur {
    backdrop-filter: blur(5px);
 }
 
 .filter {
    filter: blur(5px);
+}
+
+.red {
+   color: #FF3232;
 }
 
 /*------- NAVIGATION -------*/
@@ -131,13 +143,54 @@ nav {
    color: var(--black);
 }
 
+.theme-switch {
+   position: relative;
+}
+
+.checkbox {
+   opacity: 0;
+   position: absolute;
+}
+
+.switch {
+   margin: 0;
+   width: 50px;
+   background-color: #111;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 30px;
+   padding: 6px;
+   position: relative;
+}
+
+.switcher {
+   background-color: #fff;
+   position: absolute;
+   left: 7%;
+   height: 23px;
+   width: 23px;
+   border-radius: 50%;
+}
+
+.moon {
+   color: #ffa502;
+}
+
+.sun {
+   color: #ff4757;
+}
+
+.checkbox:checked + .switch .switcher {
+   transform: translateX(88%);
+}
+
 .navigation {
    display: flex;
    justify-content: center;
    align-items: center;
    list-style-type: none;
    gap: 30px;
-   transition: var(--transition-time);
    transform-origin: top;
 }
 
@@ -162,7 +215,7 @@ nav {
    transform: scaleX(0);
    background-color: var(--red);
    transform-origin: right;
-   transition: transform 0.35s ease-out;
+   transition: transform var(--transition-time);
 }
 
 .nav-link:hover::after, .nav-link:focus::after {
@@ -182,7 +235,6 @@ nav {
    height: 4px;
    border-radius: 10px;
    margin: 6px auto;
-   transition: var(--transition-time);
 }
 
 .bar:nth-child(2) {
@@ -227,6 +279,7 @@ nav {
 
 .resume-btn:hover, .resume-btn:focus {
    background-color: var(--white);
+   border-color: #EB7B83;
 }
 
 .freelancer-img {
@@ -274,7 +327,6 @@ nav {
    border: var(--project-border) transparent;
    color: var(--black);
    background-color: var(--transparent-white);
-   transition: var(--transition-time);
 }
 
 .pg-link:hover, .pg-link:focus {
@@ -312,7 +364,6 @@ nav {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    row-gap: 4px;
-   transition: var(--transition-time);
 }
 
 .contact-form form:focus-within {
@@ -320,9 +371,9 @@ nav {
 }
 
 .contact-form legend {
+   padding: 0 1rem;
    grid-column: 1 / 4;
    font-style: italic;
-   color: red;
 }
 
 fieldset {
@@ -330,23 +381,27 @@ fieldset {
    border: none;
 }
 
-.comment {
+.message {
    grid-column: 1 / 4;
 }
 
 label {
+   margin-bottom: 0.75rem;
    display: flex;
-   flex-direction: column;
-   justify-content: center;
    align-items: flex-start;
    font-size: 1.25rem;
-   gap: 0.75rem;
+   gap: 0.5rem;
+}
+
+label[for=submit-btn] {
+   margin: 0;
+   display: block;
 }
 
 input[type=submit] {
    padding: 0.75rem 1.25rem;
-   width: 50%;
    align-self: center;
+   justify-self: center;
    color: var(--white);
    text-transform: capitalize;
    font-weight: bold;
@@ -358,7 +413,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
-   background-color: #E74751;
+   background-color: var(--dark-red);
 }
 
 input, textarea {
@@ -404,6 +459,10 @@ textarea {
    width: 300px;
 }
 
+.copy {
+   text-align: center;
+}
+
 .foot p {
    font-size: 0.75rem;
    color: var(--black);
@@ -414,7 +473,3 @@ textarea {
    align-items: center;
    gap: 15px;
 }
-
-/* .intro-credit {
-   grid-column: 3;
-} */

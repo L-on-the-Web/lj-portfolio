@@ -17,6 +17,10 @@
    gap: 2rem;
 }
 
+.bp-slider a:nth-child(2) {
+   text-align: center;
+}
+
 .slider-btn {
    width: 200px;
    color: var(--black);
