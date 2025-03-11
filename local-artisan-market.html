@@ -12,6 +12,7 @@
 
       <link rel="stylesheet" href="assets/css/styles.css">
       <link rel="stylesheet" href="assets/css/section.css">
+      <link rel="stylesheet" href="assets/css/dark-mode.css">
       <link rel="stylesheet" href="assets/css/mobile.css">
       <title>L. Jackson &verbar; Projects - The Local Artisan Market</title>
    </head>
@@ -19,14 +20,22 @@
       <header>
          <nav class="blur">
             <div class="logo">
-               <a href="index.html">L Jackson</a>
+               <a href="index.html">L. Jackson</a>
+            </div>
+            <div class="theme-switch">
+               <input type="checkbox" class="checkbox" id="checkbox" />
+               <label for="checkbox" class="switch">
+                  <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+                  <ion-icon name="moon-outline" class="moon"></ion-icon>
+                  <div class="switcher"></div>
+               </label>
             </div>
             <ul class="navigation">
                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                <li class="nav-item"><a class="nav-link" href="index.html#project-snip">Projects</a></li>
                <li class="nav-item"><a class="nav-link" href="https://labrianaportfolio.wordpress.com/blog/">Blog</a></li>
-               <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1DXJbmEdR1FhcoOLG-9qx_nbO8TWBkFYY/view">Resume</a></li>
             </ul>
             <div id="hamburger" class="hamburger">
                <span class="bar"></span>
@@ -50,7 +59,7 @@
                      <div class="bp-description">
                         <p>This is a webpage advertising a fictional event called The Local Artisan Market, whose purpose is to showcase local crafts and to foster connections between local artisans and their community.</p>
                         <p>For this personal project, I gave myself a project brief with Google and did research on artisans and existing sites to find common styles.</p>
-                        <p>I commonly saw sites with white backgrounds,and if the site did use color, than it was a bold color scheme with contrasting colors. Most websites feature the brand name in a circle or oval, although I saw one site use a triangle. I wanted the logo I designed to be rounded, but I also wanted it to maintain a triangular shape.</p>
+                        <p>I commonly saw sites with white backgrounds,and if the site did use color, then it used a bold color scheme with contrasting colors. Most websites featured the brand name in a circle or oval, although I saw one site use a triangle. I wanted the logo I designed to be rounded, but I also wanted it to maintain a triangular shape.</p>
                         <p class="italic">Click here <a href="https://github.com/L-on-the-Web/local-artisan-market">to view the repository on my GitHub</a></p>
                         <p class="italic">Click here <a href="https://l-on-the-web.github.io/local-artisan-market">to visit the webpage</a></p>
                         <p class="italic">Click here to view the PDFs: <a href="assets/docs/la-project-brief.pdf" target="_blank">Project Brief</a>, <a href="assets/docs/la-artisan-research.pdf" target="_blank">Artisan Resarch</a></p>
@@ -79,10 +88,10 @@
                <p>Designed and Developed by L-on-the-Web</p>
                <p class="intro-credit">Freelancer Concept Image <a href="http://www.freepik.com">designed by slidesgo / Freepik</a></p>
             </div>
-            <p>&copy; 2025 L. Jackson</p>
+            <p>&copy; <span class="data-year"></span> L. Jackson</p>
             <div class="social-flex">
                <div class="foot-socials">
-                  <a href="https://facebook.com"><img class="social-icon" src="assets/icons/facebook_iconfinder.png" width="48" height="48" alt="Facebook"></a>
+                  <a href="https://www.facebook.com/people/LaBriana-Jackson/pfbid025irU3f3S8omsaCrQCv1ogeyAt1CU4aX2qt6mR6vCbB66FXviRdu8ZrmNHfNy4S83l/"><img class="social-icon" src="assets/icons/facebook_iconfinder.png" width="48" height="48" alt="Facebook"></a>
                   <a href="https://linkedin.com/labriana-jackson"><img class="social-icon" src="assets/icons/linkedin_iconfinder.png" width="48" height="48" alt="LinkedIn"></a>
                   <a href="https://github.com/L-on-the-Web"><img class="social-icon" src="assets/icons/github_iconfinder.png" width="48" height="48" alt="GitHub"></a>
                   <a href="https://codepen.io/L-Jackson-the-encoder"><img class="social-icon" src="assets/icons/codepen_iconfinder.png" width="48" height="48" alt="CodePen"></a>
@@ -90,6 +99,10 @@
             </div>
          </div>
       </footer>
+      <!--Ion icons CDN -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <!--JavaScript-->
       <script src="assets/js/script.js"></script>
+      <script src="assets/js/theme-switch.js"></script>
    </body>
 </html>
