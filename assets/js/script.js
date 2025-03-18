@@ -26,6 +26,10 @@
       navBar.classList.remove("blur");
       mainDiv.classList.add("filter");
       footer.classList.add("filter");
+      const hamActive = hamburger.classList.contains("active");
+      if (hamActive === true) {
+         hamburger.addEventListener("click", closeMenu);
+      }
    }
 
    // Close hamburger menu on navLink click
@@ -36,6 +40,7 @@
       navBar.classList.add("blur");
       mainDiv.classList.remove("filter");
       footer.classList.remove("filter");
+      hamburger.removeEventListener("click", closeMenu);
    }
 
    const body = document.querySelector("body");
