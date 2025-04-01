@@ -161,8 +161,8 @@ nav {
    align-items: center;
    justify-content: space-between;
    border-radius: 30px;
-   padding: 6px;
    position: relative;
+   gap: 0;
 }
 
 .switcher {
@@ -172,6 +172,10 @@ nav {
    height: 23px;
    width: 23px;
    border-radius: 50%;
+}
+
+.sun, .moon {
+   display: flex;
 }
 
 .moon {
@@ -474,4 +478,9 @@ textarea {
    display: inline-flex;
    align-items: center;
    gap: 15px;
+}
+
+.social-icon:hover, .social-icon:focus {
+   transform: scale(1.1);
+   filter: opacity(0.5);
 }
