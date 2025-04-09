@@ -35,7 +35,7 @@
 
 /*------- RESETS -------*/
 html {
-   font-family: "Century Gothic", sans-serif;
+   font-family: "Century Gothic", "PT Sans", sans-serif;
    scroll-behavior: smooth;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 h1, h2, h3 {
-   font-family: "Eras ITC", sans-serif;
+   font-family: "Eras ITC", "Optima Bold", sans-serif;
 }
 
 h1 {
@@ -108,6 +108,7 @@ p {
 
 /*-------UNIVERSAL CLASSES-------*/
 .blur {
+   -webkit-backdrop-filter: blur(5px);
    backdrop-filter: blur(5px);
 }
 
@@ -168,7 +169,7 @@ nav {
 .switcher {
    background-color: #fff;
    position: absolute;
-   left: 7%;
+   left: 6%;
    height: 23px;
    width: 23px;
    border-radius: 50%;
@@ -187,7 +188,7 @@ nav {
 }
 
 .checkbox:checked + .switch .switcher {
-   transform: translateX(88%);
+   transform: translateX(89%);
 }
 
 .navigation {
