@@ -26,6 +26,10 @@ body.dark .resume-btn {
    color: var(--light-grey);
 }
 
+body.dark .resume-btn a {
+   color: var(--white);
+}
+
 body.dark .resume-btn:hover, body.dark .resume-btn:focus {
    background-color: var(--off-black);
 }

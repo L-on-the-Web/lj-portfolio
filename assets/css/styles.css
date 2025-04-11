@@ -284,6 +284,14 @@ nav {
    background-color: transparent;
 }
 
+.resume-btn a {
+   color: var(--black);
+}
+
+.contact-btn a {
+   color: var(--white);
+}
+
 .resume-btn:hover, .resume-btn:focus {
    background-color: var(--white);
    border-color: #EB7B83;
@@ -316,6 +324,10 @@ nav {
 
 .snip-detail button {
    margin-top: 1.5rem;
+}
+
+.snip-detail button a {
+   color: var(--white);
 }
 
 /*------- SECTION 3 / PROJECTS -------*/
@@ -377,9 +389,13 @@ nav {
    background-color: var(--white);
 }
 
-.contact-form legend {
-   padding: 0 1rem;
+.legend {
+   padding: 0;
    grid-column: 1 / 4;
+}
+
+.legend legend {
+   padding: 0 1rem;
    font-style: italic;
 }
 
