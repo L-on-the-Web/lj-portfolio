@@ -41,7 +41,7 @@
 
 /*-------IMAGES-------*/
 .about-img {
-   flex-basis: 1500px;
+   flex-basis: 90rem;
 }
 
 .about-img img, .big-project img, .big-project video {
@@ -61,9 +61,14 @@
    gap: 15px;
 }
 
-.bp-concept-img img, .bp-concept-img video {
+.bp-concept-img img {
    height: 100%;
    cursor: zoom-in;
+}
+
+.bp-concept-img video {
+   height: 100%;
+   cursor: pointer;
 }
 
 #artisan-concept {

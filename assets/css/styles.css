@@ -1,10 +1,13 @@
+/*-------FONTS-------*/
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*------- CSS VARIABLES -------*/
 :root {
    --nav-padding: 1rem 5rem;
    --container-padding: 3.5rem 5rem 0;
    --foot-padding: 0.75rem 5rem;
    --bottom-margin: 7rem;
-   --header-margin: 0 0 1rem;
+   --header-margin: 0 0 0.75rem;
    --about-margin: 0 5%;
    --btn-margin: 3.5rem 0 0;
 
@@ -12,12 +15,20 @@
    --mobile-container-padding: 3.5rem 3rem 0;
    --mobile-foot-padding: 0.25rem 3rem;
 
-   --border-radius: 15px;
+   --border-radius: 0.75rem;
+   --button-radius: 0.75rem;
    --header-line-height: 1.5;
    --paragraph-line-height: 1.5;
    --project-border: 2px solid;
-   --main-img-gap: 50px;
-   --paragraph-gap: 20px;
+   --main-img-gap: 3.5rem;
+   --paragraph-gap: 1.25rem;
+
+   --h1-font-size: 3.5rem;
+   --h2-font-size: 2.5rem;
+   --h3-font-size: 1.25rem;
+   --regular-font-size: 1rem;
+   --button-font-size: 0.85rem;
+
    --transparent-white: rgb(255 255 255 / 50%);
    --dark-transparent: rgb(255 255 255 / 18%);
    --dark-red: #E74751;
@@ -35,7 +46,7 @@
 
 /*------- RESETS -------*/
 html {
-   font-family: "Century Gothic", "PT Sans", sans-serif;
+   font-family: "Montserrat", sans-serif;
    scroll-behavior: smooth;
 }
 
@@ -58,35 +69,36 @@ body {
 }
 
 h1, h2, h3 {
-   font-family: "Eras ITC", "Optima Bold", sans-serif;
+   font-family: "Amaranth", sans-serif;
 }
 
 h1 {
    margin: var(--header-margin);
    line-height: 1.1;
-   font-size: 3em;
+   font-size: var(--h1-font-size);
 }
 
 h2 {
    margin: var(--header-margin);
    line-height: var(--header-line-height);
-   font-size: 2.5em;
+   font-size: var(--h2-font-size);
 }
 
 h3 {
    margin: var(--header-margin);
    line-height: var(--header-line-height);
-   font-size: 1em;
+   font-size: var(--h3-font-size);
 }
 
 button {
    padding: 0.75rem 1.25rem;
    text-transform: capitalize;
    color: var(--white);
+   font-size: var(--button-font-size);
    font-weight: bold;
    background-color: var(--red);
    border: 2px solid #E74751;
-   border-radius: 10px;
+   border-radius: var(--button-radius);
    transition: 0.35s ease-in;
    cursor: pointer;
 }
@@ -102,7 +114,7 @@ a, a:visited {
 }
 
 p {
-   font-size: 1rem;
+   font-size: var(--regular-font-size);
    line-height: var(--paragraph-line-height);
 }
 
@@ -269,7 +281,6 @@ nav {
 
 .intro h1 {
    margin-top: 1.5rem;
-   font-size: 4rem;
 }
 
 .cta-btn {
@@ -298,7 +309,7 @@ nav {
 }
 
 .freelancer-img {
-   flex-basis: 500px;
+   flex-basis: 25rem;
 }
 
 .freelancer-img img {
@@ -346,6 +357,7 @@ nav {
    border: var(--project-border) transparent;
    color: var(--black);
    background-color: var(--transparent-white);
+   border-radius: var(--border-radius);
 }
 
 .pg-link:hover, .pg-link:focus {
@@ -363,6 +375,7 @@ nav {
    display: flex;
    flex-direction: column;
    align-items: center;
+   gap: 0.5rem;
 }
 
 .project-img img {
@@ -380,6 +393,7 @@ nav {
 .contact-form form {
    padding: 1rem;
    background-color: var(--transparent-white);
+   border-radius: var(--border-radius);
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    row-gap: 4px;
@@ -427,10 +441,11 @@ input[type=submit] {
    justify-self: center;
    color: var(--white);
    text-transform: capitalize;
+   font-size: var(--button-font-size);
    font-weight: bold;
    background-color: var(--red);
    border: 1px solid #E74751;
-   border-radius: 10px;
+   border-radius: var(--button-radius);
    transition: 0.35s ease-in;
    cursor: pointer;
 }
@@ -443,7 +458,7 @@ input, textarea {
    padding: 0.5rem;
    width: 100%;
    border: 1px solid var(--red);
-   border-radius: 5px;
+   border-radius: var(--border-radius);
    font-size: 1rem;
    font-family: "Century Gothic"
 }
