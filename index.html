@@ -135,25 +135,25 @@
                   <label for="name-input">
                     <span class="contact-label">Name</span><span class="red"> *</span>
                   </label>
-                  <input type="text" name="name" id="name-input" autocomplete="name" placeholder="First and Last Name" required>
+                  <input type="text" name="name" id="name-input" autocomplete="name" title="Please enter your name." placeholder="First and Last Name" required>
                </fieldset>
                <fieldset class="email">
                   <label for="email-input">
                     <span class="contact-label">Email</span><span class="red"> *</span>
                   </label>
-                  <input type="email" name="email" id="email-input" autocomplete="email" placeholder="john.doe@example.com" required>
+                  <input type="email" name="email" id="email-input" title="Please enter your email address." autocomplete="email" placeholder="john.doe@example.com" required>
                </fieldset>
                <fieldset class="phone">
                   <label for="phone-input">
                     <span class="contact-label">Phone</span>
                   </label>
-                  <input type="tel" name="phone" id="phone-input" pattern="([0-9]{3})[0-9]{3}-[0-9]{4}" autocomplete="tel" placeholder="(123)456-7890">
+                  <input type="tel" name="phone" id="phone-input" title="This is optional. Please enter in correct format as seen in placeholder." placeholder="1234567890" autocomplete="tel" pattern="[0-9]{10}">
                </fieldset>
                <fieldset class="message">
                   <label for="message-input">
                     <span class="contact-label">Message</span><span class="red"> *</span>
                   </label>
-                  <textarea name="message" id="message-input" wrap="hard" rows="10" cols="6" placeholder="Say hello, request some code, etc." required></textarea>
+                  <textarea name="message" id="message-input" title="Type me a message!" wrap="hard" rows="10" cols="6" placeholder="Say hello, request some code, etc." required></textarea>
                </fieldset>
                <fieldset class="submit">
                   <label for="submit-btn">
