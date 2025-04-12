@@ -101,6 +101,19 @@
       display: block;
    }
 
+   label {
+      justify-content: center;
+   }
+
+   label[for=submit-btn] {
+      text-align: center;
+   }
+
+   input[type=submit] {
+      width: 50%;
+      align-self: center;
+   }
+
    .foot-flex {
       width: unset;
       align-items: center;
